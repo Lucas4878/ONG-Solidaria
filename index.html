@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Descrição da página para mecanismos de busca (SEO) -->
+    <meta
+        name="description"
+        content="ONG Solidária: apoio educacional, alimentar e desenvolvimento social para comunidades vulneráveis."
+    >
+
+    <title>ONG Solidária | Transformando Vidas e Construindo Futuros</title>
+
+    <!-- Folha de estilos e script de busca -->
+    <link rel="stylesheet" href="css/home.css">
+    <script src="js/busca.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Cabeçalho Principal do Site -->
+    <header>
+        <!-- Logotipo da ONG -->
+        <figure>
+            <a href="index.html" aria-label="Ir para a página inicial da ONG Solidária">
+                <picture>
+                    <source srcset="img/logo-ong.avif" type="image/avif">
+                    <source srcset="img/logo-ong.webp" type="image/webp">
+                    <img
+                        src="img/logo-ong.png"
+                        alt="Logotipo da ONG Solidária, composto por mãos estilizadas em formato de abraço"
+                        width="150"
+                        height="50"
+                    >
+                </picture>
+            </a>
+        </figure>
+
+        <!-- Menu de Navegação Principal e Caixa de Pesquisa -->
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li>
+                    <!-- Indica que esta é a página atual -->
+                    <a href="index.html" aria-current="page">Início</a>
+                </li>
+
+                <li>
+                    <a href="projetos.html">Projetos</a>
+                </li>
+
+                <li>
+                    <a href="cadastro.html">Seja Voluntário</a>
+                </li>
+
+                <li>
+                    <!-- Formulário de Busca Interna -->
+                    <form
+                        class="search-box"
+                        action="/buscar"
+                        method="get"
+                        role="search"
+                    >
+                        <label for="campo-pesquisa" class="visually-hidden">
+                            Pesquisar no site
+                        </label>
+
+                        <input
+                            type="search"
+                            id="campo-pesquisa"
+                            name="q"
+                            placeholder="Pesquisar..."
+                            autocomplete="off"
+                        >
+
+                        <button type="submit" aria-label="Buscar">
+                            <!-- Ícone SVG de Lupa -->
+                            <svg
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                viewBox="0 0 16 16"
+                                aria-hidden="true"
+                                focusable="false"
+                            >
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.098zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                                >
+                                </path>
+                            </svg>
+                            <span class="visually-hidden">Buscar</span>
+                        </button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal da Página -->
+    <main>
+        <!-- Seção de Destaque / Hero -->
+        <section id="hero" aria-labelledby="titulo-principal">
+            <div>
+                <h1 id="titulo-principal">
+                    Transformando Vidas e Construindo Futuros
+                </h1>
+
+                <p>
+                    Atuamos na linha de frente do desenvolvimento social,
+                    oferecendo suporte educacional e alimentar para
+                    comunidades vulneráveis.
+                </p>
+
+                <!-- Botões de Ação Principal (CTA) -->
+                <nav aria-label="Ações principais">
+                    <a href="cadastro.html" class="btn-cta">
+                        Participe da Nossa Causa
+                    </a>
+
+                    <a href="#contato" class="btn-secundario">
+                        Fale Conosco
+                    </a>
+                </nav>
+            </div>
+
+            <!-- Imagem de Destaque Otimizada -->
+            <figure>
+                <picture>
+                    <source srcset="img/voluntarios.avif" type="image/avif">
+                    <source srcset="img/voluntarios.webp" type="image/webp">
+                    <img
+                        src="img/voluntarios.jpg"
+                        alt="Voluntários da ONG Solidária sorrindo enquanto distribuem kits de material escolar para crianças em uma praça pública"
+                        loading="eager"
+                        width="800"
+                        height="600"
+                    >
+                </picture>
+            </figure>
+        </section>
+
+        <!-- Seção da Missão Institucional -->
+        <section id="missao" aria-labelledby="titulo-missao">
+            <h2 id="titulo-missao">Nossa Missão Institucional</h2>
+
+            <p>
+                Garantir acesso igualitário a oportunidades de capacitação
+                profissional e recursos básicos de sobrevivência para quem
+                mais precisa, fortalecendo o tecido social da comunidade.
+            </p>
+        </section>
+
+        <!-- Seção de Contato e Informações -->
+        <section id="contato" aria-labelledby="titulo-contato">
+            <h2 id="titulo-contato">Entre em Contato</h2>
+
+            <p>
+                Dúvidas, parcerias ou doações? Nossa equipe está pronta para
+                atender você.
+            </p>
+
+            <!-- Informações de Contato Semânticas -->
+            <address>
+                <ul>
+                    <li>
+                        <strong>E-mail:</strong>
+                        <a href="mailto:contato@ongsolidaria.org">
+                            contato@ongsolidaria.org
+                        </a>
+                    </li>
+
+                    <li>
+                        <strong>Telefone / WhatsApp:</strong>
+                        <a href="tel:+5516987654321">
+                            (16) 98765-4321
+                        </a>
+                    </li>
+
+                    <li>
+                        <strong>Endereço:</strong>
+                        Rua dos Voluntários, 1234 - Centro,
+                        Franca - SP
+                    </li>
+                </ul>
+            </address>
+        </section>
+    </main>
+
+    <!-- Rodapé do Site -->
+    <footer>
+        <p>
+            &copy; 2026 ONG Solidária. Todos os direitos reservados.
+        </p>
+    </footer>
+
+</body>
+</html>

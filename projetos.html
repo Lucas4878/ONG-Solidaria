@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Descrição otimizada para motores de busca (SEO) -->
+    <meta
+        name="description"
+        content="Conheça os projetos sociais desenvolvidos pela ONG Solidária nas áreas de educação, arrecadação e apoio comunitário."
+    >
+
+    <title>Projetos Sociais | ONG Solidária</title>
+
+    <!-- Folha de estilos e script comportamental assíncrono -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Cabeçalho Principal da Aplicação -->
+    <header>
+        <!-- Logotipo institucional com suporte a formatos de nova geração -->
+        <figure>
+            <a
+                href="index.html"
+                aria-label="Ir para a página inicial da ONG Solidária"
+            >
+                <picture>
+                    <source srcset="img/logo-ong.avif" type="image/avif">
+                    <source srcset="img/logo-ong.webp" type="image/webp">
+                    <img
+                        src="img/logo-ong.png"
+                        alt="Logotipo da ONG Solidária, composto por mãos estilizadas em formato de abraço"
+                        width="150"
+                        height="50"
+                    >
+                </picture>
+            </a>
+        </figure>
+
+        <!-- Navegação Principal do Site -->
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        Início
+                    </a>
+                </li>
+
+                <li>
+                    <!-- Indica que esta é a página ativa no momento -->
+                    <a
+                        href="projetos.html"
+                        aria-current="page"
+                    >
+                        Projetos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="cadastro.html">
+                        Seja Voluntário
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal da Página de Projetos -->
+    <main>
+
+        <!-- Secção principal que agrupa as iniciativas da ONG -->
+        <section
+            id="lista-projetos"
+            aria-labelledby="titulo-projetos"
+        >
+            <header>
+                <h1 id="titulo-projetos">
+                    Nossas Iniciativas de Impacto
+                </h1>
+
+                <p>
+                    Descubra os projetos em andamento e saiba como direcionar
+                    seu apoio para transformar realidades.
+                </p>
+            </header>
+
+            <!-- Cartão Individual do Projeto 1: Educação -->
+            <article class="cartao-projeto">
+                <figure>
+                    <!-- Gestão de imagem adaptativa e formatos de alta performance -->
+                    <picture>
+                        <source srcset="img/projeto-educacao.avif" type="image/avif">
+                        <source srcset="img/projeto-educacao.webp" type="image/webp">
+                        <img
+                            src="img/projeto-educacao.jpg"
+                            alt="Crianças participando de uma oficina educacional e de leitura"
+                            width="600"
+                            height="400"
+                            loading="lazy"
+                        >
+                    </picture>
+                </figure>
+
+                <header>
+                    <h2>
+                        Educação e Futuro
+                    </h2>
+
+                    <p>
+                        Oficinas de reforço escolar, letramento e mentorias
+                        educacionais para jovens da rede pública.
+                    </p>
+                </header>
+            </article>
+
+            <!-- Cartão Individual do Projeto 2: Arrecadação -->
+            <article class="cartao-projeto">
+                <figure>
+                    <picture>
+                        <source srcset="img/projeto-arrecadacao.avif" type="image/avif">
+                        <source srcset="img/projeto-arrecadacao.webp" type="image/webp">
+                        <img
+                            src="img/projeto-arrecadacao.jpg"
+                            alt="Voluntários organizando cestas básicas e mantimentos para doação"
+                            width="600"
+                            height="400"
+                            loading="lazy"
+                        >
+                    </picture>
+                </figure>
+
+                <header>
+                    <h2>
+                        Rede de Apoio Alimentar
+                    </h2>
+
+                    <p>
+                        Arrecadação contínua e distribuição estratégica de
+                        mantimentos e itens de primeira necessidade.
+                    </p>
+                </header>
+            </article>
+
+        </section>
+
+        <!-- Bloco de Conteúdo Complementar (Aside) para Doações -->
+        <aside
+            id="bloco-doacao"
+            aria-labelledby="titulo-doacao"
+        >
+            <h2 id="titulo-doacao">
+                Contribua com a Nossa Causa
+            </h2>
+
+            <p>
+                Sua doação financeira nos ajuda a manter os projetos ativos.
+                Utilize nossa chave PIX oficial:
+            </p>
+
+            <!-- Uso de <data> para associar o valor computacional ao texto legível -->
+            <p>
+                <strong>Chave PIX (CNPJ):</strong>
+                <data value="00123456000178">
+                    00.123.456/0001-78
+                </data>
+            </p>
+        </aside>
+
+    </main>
+
+    <!-- Rodapé Institucional -->
+    <footer>
+        <p>
+            &copy; 2026 ONG Solidária. Todos os direitos reservados.
+        </p>
+    </footer>
+
+</body>
+</html>
